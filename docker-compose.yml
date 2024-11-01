@@ -1,0 +1,9 @@
+services:
+  flask_app:
+    build: .
+    ports:
+      - "5001:5000"  # Змінили з 5000 на 5001
+    volumes:
+      - .:/app
+    environment:
+      FLASK_ENV: development
