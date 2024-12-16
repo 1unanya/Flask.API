@@ -1,0 +1,10 @@
+# Ігноруємо середовище Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Ігноруємо файли Docker
+*.log
+*.tmp
+.env
