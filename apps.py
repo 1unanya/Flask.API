@@ -20,7 +20,7 @@ class ItemModel(db.Model):
     __tablename__ = 'items'
 
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(80), nullable=False)
+    name = db.Column(db.String(80), nullable=False, index=True)  # Додаємо індекс
     price = db.Column(db.Float, nullable=False)
 
     def json(self):
